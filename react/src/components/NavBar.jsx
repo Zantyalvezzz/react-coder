@@ -1,17 +1,20 @@
-import React from 'react'
-import CartWidget from './CartWidget'
+import { Link,} from 'react-router-dom'
+import Home from './Home'
+import Tienda from './Tienda'
+import SobreNosotros from './SobreNosotros'
+import CartIcon from './CartIcon'
 
 function NavBar() {
     return (
         <div className='navbar'>
             <nav>
             <ul className='nav-links'>
-                <li><a href="">Enlace1</a></li>
-                <li><a href="">Enlace2</a></li>
-                <li><a href="">Enlace3</a></li>
+                <li> <Link to={"/"}>Home</Link> </li>
+                <li> <Link to={"Tienda"}>Tienda</Link> </li>
+                <li> <Link to={"SobreNosotros"}>Sobre Nosotros</Link> </li>
             </ul>
             </nav>
-            <CartWidget/>
+            <Link to={"Cart"}> <CartIcon/> </Link>
         </div>
     )
 }

@@ -4,28 +4,3 @@
   padding: 2rem;
   text-align: center;
 }
-
-.logo {
-  color: blueviolet;
-  display: flex;
-  gap: 16px;
-  align-items: center;
-  justify-content: center;
-}
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 1rem;
-}
-
-h2{
-  color: red;
-  font-size: 1rem;
-}
