@@ -4,7 +4,7 @@ import productos from "../data/productos"
 
 function ItemListContainer() {
 
-    const { items, setItems } = useState([]);
+    const [items, setItems] = useState([]);
     useEffect(() => {
         const fetchProductos = new Promise((resolve) => {
             setTimeout(() => {
@@ -14,13 +14,12 @@ function ItemListContainer() {
         });
         fetchProductos.then((res) => {
             setItems(res)
-        })
-            , []
-    })
+        });
+    }, []);
 
     return (
         <div>
-            <ItemList prods={productos} />
+            <ItemList prods={items} />
         </div>
     )
 }

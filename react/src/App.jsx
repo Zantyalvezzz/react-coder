@@ -1,13 +1,12 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './App.css'
-import Header from './components/Header'
-import ItemListContainer from './components/ItemListContainer'
-import Tienda from './components/Tienda'
 import SobreNosotros from './components/SobreNosotros'
 import Error from './components/Error'
 import Home from './components/Home'
 import Layout from './components/Layout'
 import CartWidget from './components/CartWidget'
+import ItemDetail from './components/ItemDetail'
+import ItemListContainer from './components/ItemListContainer'
 
 function App() {
 
@@ -17,7 +16,8 @@ function App() {
         <Routes>
           <Route path='/' element={<Layout />}>
             <Route index element={<Home/>}/>
-            <Route path='/Tienda' element={<Tienda />}/>
+            <Route path='/Tienda' element={<ItemListContainer />}/>
+            <Route path='/productos/:id' element={<ItemDetail />}/>
             <Route path='/SobreNosotros' element={<SobreNosotros />}/>
             <Route path='/Cart' element={<CartWidget />}/>
             <Route path='*' element={<Error />}/>

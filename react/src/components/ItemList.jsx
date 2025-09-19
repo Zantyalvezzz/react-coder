@@ -23,9 +23,7 @@ function ItemList( {prods}) {
     </div>
         <section className="itemlist">
         {filteredProds.map((prod) => (
-                <Item 
-                key={prod.id} {...prod}
-                />
+                <Item key={prod.id} id={prod.id} nombre={prod.nombre} imagen={prod.imagen} precio={prod.precio}/>
             ))}
         </section>
         </div>
