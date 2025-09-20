@@ -26,16 +26,24 @@
     gap: 2rem;
 }
 
+.nav-links li:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
 .nav-links a {
     text-decoration: none;
     color: #462a93;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-shadow: #825fe5 2px 2px 4px;
 }
 
 .nav-links a:hover {
-    color: #825fe5;
+    color: #5220db;
     transition: 1s;
 }
+
 
 .mainbuttons {
     display: flex;
