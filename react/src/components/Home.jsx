@@ -1,9 +1,9 @@
-import React from 'react'
+import welcome from '../assets/welcome.jpg'
 
 function Home() {
   return (
     <div>
-        <p className='subtit'>WELCOME</p>
+      <img className='welcome' src={welcome} alt="welcome" />
     </div>
   )
 }

@@ -1,13 +1,13 @@
-function Button({children,onClick}) {
+function Button({ children, onClick }) {
 
-const style = {
-    backgroundColor: "gray",
-    color: "white",
-    border: "none",
-    borderRadius: "5px",
-    cursor: "pointer",
-    padding: "1rem",
-    fontSize: "1rem",
+    const style = {
+        backgroundColor: "#815ce7ff",
+        color: "white",
+        border: "none",
+        borderRadius: "5px",
+        cursor: "pointer",
+        padding: "1rem",
+        fontSize: "1rem",
     }
 
     return (

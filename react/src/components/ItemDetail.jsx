@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom"
 import productos from "../data/productos"
+import Button from "./Button";
 
 function ItemDetail() {
 
@@ -12,11 +13,13 @@ function ItemDetail() {
     }
 
     return (
-        <div>
+        <div className="itemdetail">
             <h2>{producto.nombre}</h2>
             <img src={producto.imagen} alt={producto.nombre} />
-            <h3>{producto.descripcion}</h3>
-            <h4>Precio: ${producto.precio}</h4>
+            <h4>{producto.descripcion}</h4>
+            <h3>Precio: ${producto.precio}</h3>
+            <Button>Agregar al carrito</Button>
+
         </div>
     )
 }

@@ -9,23 +9,23 @@ const categorias = {
     accesorios: "Accesorios",
 };
 
-function ItemList( {prods}) {
+function ItemList({ prods }) {
     const [categoriaSeleccionada, setCategoriaSeleccionada] = useState("");
 
     const filteredProds = categoriaSeleccionada ?
         prods.filter(prod => prod.categoria === categoriaSeleccionada) : prods;
 
     return (
-<div>
-    <p className="subtit">Categorias:</p>
-    <div className="mainbuttons">
-    <MainButtons onFilter={setCategoriaSeleccionada}></MainButtons>
-    </div>
-        <section className="itemlist">
-        {filteredProds.map((prod) => (
-                <Item key={prod.id} id={prod.id} nombre={prod.nombre} imagen={prod.imagen} precio={prod.precio}/>
-            ))}
-        </section>
+        <div>
+            <p className="subtit">Categorias:</p>
+            <div className="mainbuttons">
+                <MainButtons onFilter={setCategoriaSeleccionada}></MainButtons>
+            </div>
+            <section className="itemlist">
+                {filteredProds.map((prod) => (
+                    <Item key={prod.id} id={prod.id} nombre={prod.nombre} imagen={prod.imagen} precio={prod.precio} />
+                ))}
+            </section>
         </div>
     )
 }

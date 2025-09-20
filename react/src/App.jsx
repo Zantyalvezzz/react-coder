@@ -15,12 +15,12 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<Layout />}>
-            <Route index element={<Home/>}/>
-            <Route path='/Tienda' element={<ItemListContainer />}/>
-            <Route path='/productos/:id' element={<ItemDetail />}/>
-            <Route path='/SobreNosotros' element={<SobreNosotros />}/>
-            <Route path='/Cart' element={<CartWidget />}/>
-            <Route path='*' element={<Error />}/>
+            <Route index element={<Home />} />
+            <Route path='/Tienda' element={<ItemListContainer />} />
+            <Route path='/productos/:id' element={<ItemDetail />} />
+            <Route path='/SobreNosotros' element={<SobreNosotros />} />
+            <Route path='/Cart' element={<CartWidget />} />
+            <Route path='*' element={<Error />} />
           </Route>
         </Routes>
       </BrowserRouter>
