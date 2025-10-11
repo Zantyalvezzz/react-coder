@@ -3,13 +3,9 @@ import Item from "./Item";
 import MainButtons from "./MainButtons";
 import "./styles.css"
 
-const categorias = {
-    hombres: "Hombres",
-    mujeres: "Mujeres",
-    accesorios: "Accesorios",
-};
 
 function ItemList({ prods }) {
+
     const [categoriaSeleccionada, setCategoriaSeleccionada] = useState("");
 
     const filteredProds = categoriaSeleccionada ?

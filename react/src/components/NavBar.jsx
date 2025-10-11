@@ -11,7 +11,7 @@ function NavBar() {
                     <li> <Link to={"SobreNosotros"}>Sobre Nosotros</Link> </li>
                 </ul>
             </nav>
-            <Link to={"Cart"}> <CartIcon /> </Link>
+            <CartIcon />
         </div>
     )
 }

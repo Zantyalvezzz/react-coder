@@ -144,6 +144,7 @@ h2 {
     border-radius: 1rem;
 }
 
+
 .itemdetail img {
     width: 400px;
     height: 400px;
@@ -177,4 +178,95 @@ h2 {
     color: #462a93;
     font-size: 20px;
     text-align: center;
+}
+
+.itemdetail input {
+    width: 60px;
+    padding: 5px;
+    border: 1px solid #815ce7ff;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-bottom: 1rem;
+
+}
+
+.itemdetail input::-webkit-outer-spin-button,
+.itemdetail input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.buttonDefault {
+    background-color: "#815ce7ff";
+    color: "white";
+    border: "none";
+    border-radius: "5px";
+    cursor: "pointer";
+    padding: "1rem";
+    font-size: "1rem";
+}
+
+.btn {
+    background-color: #815ce7ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 1rem;
+    font-size: 1rem;
+    transition: 0.5s;
+}
+
+.btn:hover {
+    transform: scale(1.04);
+}
+
+.carritocontainer {
+    max-width: 800px;
+    max-height: 800px;
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    padding: 1rem;
+    gap: 16px;
+}
+
+.itemcartcont {
+    color: #462a93;
+    background-color: rgb(159, 158, 158);
+    font-weight: bold;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 1rem;
+
+}
+
+.itemcartcont img {
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 0.5rem;
+}
+
+
+.cart-icon-container {
+    position: relative;
+    display: inline-block;
+}
+
+.cart-icon-container img {
+    width: 50px;
+    cursor: pointer;
+}
+
+.badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: red;
+    color: white;
+    border-radius: 10px;
+    padding: 3px 5px;
+    font-size: 12px;
 }

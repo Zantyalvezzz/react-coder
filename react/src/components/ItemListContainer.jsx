@@ -1,27 +1,16 @@
-import { useEffect, useState } from "react"
-import ItemList from "./ItemList"
-import productos from "../data/productos"
+import { useContext } from "react";
+import { ProductosContext } from "../context/prodsContext";
+import ItemList from "./ItemList";
 
 function ItemListContainer() {
 
-    const [items, setItems] = useState([]);
-    useEffect(() => {
-        const fetchProductos = new Promise((resolve) => {
-            setTimeout(() => {
-                resolve(productos);
-            }
-                , 2000);
-        });
-        fetchProductos.then((res) => {
-            setItems(res)
-        });
-    }, []);
+    const { productos } = useContext(ProductosContext);
 
     return (
         <div>
-            <ItemList prods={items} />
+            <ItemList prods={productos} />
         </div>
-    )
+    );
 }
 
-export default ItemListContainer
+export default ItemListContainer;
