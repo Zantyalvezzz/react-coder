@@ -1,24 +1,21 @@
-import { useState } from "react";
+import { useContext } from "react";
+import { ProductosContext } from "../context/prodsContext";
 import Item from "./Item";
 import MainButtons from "./MainButtons";
 import "./styles.css"
 
 
-function ItemList({ prods }) {
-
-    const [categoriaSeleccionada, setCategoriaSeleccionada] = useState("");
-
-    const filteredProds = categoriaSeleccionada ?
-        prods.filter(prod => prod.categoria === categoriaSeleccionada) : prods;
+function ItemList() {
+    const { productos, setCategoriaSeleccionada} = useContext(ProductosContext)
 
     return (
         <div>
             <p className="subtit">Categorias:</p>
             <div className="mainbuttons">
-                <MainButtons onFilter={setCategoriaSeleccionada}></MainButtons>
+                <MainButtons onFilter={setCategoriaSeleccionada}/>
             </div>
             <section className="itemlist">
-                {filteredProds.map((prod) => (
+                {productos.map((prod) => (
                     <Item key={prod.id} id={prod.id} nombre={prod.nombre} imagen={prod.imagen} precio={prod.precio} />
                 ))}
             </section>
