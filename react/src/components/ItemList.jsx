@@ -10,7 +10,7 @@ function ItemList() {
 
     return (
         <div>
-            <p className="subtit">Categorias:</p>
+            <h2 className="subtit">Categorias:</h2>
             <div className="mainbuttons">
                 <MainButtons onFilter={setCategoriaSeleccionada}/>
             </div>

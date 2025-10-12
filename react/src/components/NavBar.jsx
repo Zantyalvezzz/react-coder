@@ -9,9 +9,9 @@ function NavBar() {
                     <li> <Link to={"/"}>Home</Link> </li>
                     <li> <Link to={"Tienda"}>Tienda</Link> </li>
                     <li> <Link to={"SobreNosotros"}>Sobre Nosotros</Link> </li>
+                    <li> <CartIcon /> </li>
                 </ul>
             </nav>
-            <CartIcon />
         </div>
     )
 }
